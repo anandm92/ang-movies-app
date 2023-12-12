@@ -15,6 +15,9 @@ import { NotAuthorizedComponent } from './components/not-authorized/not-authoriz
 import { SearchComponent } from './components/search/search.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { PipesComponent } from './components/pipes/pipes.component';
+import { ProfitPipe } from './Pipes/profit.pipe';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,11 @@ import { ModalComponent } from './components/modal/modal.component';
     NotAuthorizedComponent,
     SearchComponent,
     LoaderComponent,
-    ModalComponent
+    ModalComponent,
+    PipesComponent,
+
+    //Pipes
+    ProfitPipe
   ],
   imports: [
     BrowserModule,

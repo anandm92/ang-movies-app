@@ -1,0 +1,12 @@
+<h1>{{title | uppercase}}</h1>
+<h2>Today: {{today | date:"dd/MM/yyyy"}}</h2>
+<p>
+    Image: {{image | lowercase}}
+    Price: {{price | currency}}
+</p>
+
+<input #sp="ngModel" [(ngModel)]="sellingPrice" type="text" name="sp" />
+
+<p>
+    Selling Price: {{sellingPrice | currency}}; Profit: {{sellingPrice | profit : 25 : sellingPrice | currency}}
+</p>
